@@ -1,0 +1,82 @@
+body {
+  font-family: Arial;
+  background-color: lightgrey;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+#ordenacao {
+  margin-right: 2rem;
+}
+
+#fsRoles {
+  margin-top: 1.5rem;
+}
+#fsRoles > label {
+  padding-bottom: 0.3rem;
+}
+
+#lista {
+  /* margin-left: 2rem; */
+  flex: 1;
+}
+
+#fsRoles > label {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr > th {
+  padding-top: 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid black;
+}
+
+td,
+th {
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+td:nth-child(1) {
+  width: 45px;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+
+/* @media (max-width: 560px) {
+  #lista {
+    margin-left: 0.1rem;
+  }
+} */
+
+@media (max-width: 360px) {
+  #ordenacao {
+    margin-right: auto;
+  }
+
+  tr > td {
+    font-size: 12px;
+  }
+
+  td,
+  th {
+    padding-right: 0.3rem;
+  }
+}

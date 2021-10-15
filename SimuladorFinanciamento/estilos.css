@@ -1,0 +1,50 @@
+html {
+  font-family: Arial;
+}
+
+h1,
+h2,
+th {
+  color: rgb(85, 165, 185);
+}
+
+body {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 600px;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#valor {
+  margin-left: 56px;
+}
+
+#prestacoes {
+  margin-left: 26px;
+}
+
+#jurosam {
+  margin-left: 34px;
+}

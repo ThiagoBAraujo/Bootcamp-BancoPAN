@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>A API fetch</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="conteudo">
+        <div id="ordenacao">
+          <h2>Options</h2>
+          <label for="sortBy">Sort by</label>
+          <select id="sortBy">
+            <option value="name-asc">Name (ascending)</option>
+            <option value="name-desc">Name (descending)</option>
+            <option value="salary-asc">Salary (ascending)</option>
+            <option value="salary-desc">Salary (descending)</option>
+          </select>
+          <fieldset id="fsRoles">
+            <legend>Filter by roles</legend>
+          </fieldset>
+        </div>
+        <div id="lista">
+          <h2>Employees <span id="counterEmployees"></span></h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

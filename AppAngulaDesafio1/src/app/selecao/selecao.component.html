@@ -1,0 +1,36 @@
+<h2 class="pl-1">Monte seu açaí</h2>
+<p class="pl-1">
+  <strong>Tamanho</strong>
+</p>
+
+<div class="pl-1">
+  <label *ngFor="let opcao of opcoesTamanho">
+    <input type="radio" name="Tamanho" />
+    {{ opcao }} <br />
+  </label>
+</div>
+
+<p class="pl-1">
+  <strong>Acréscimos</strong> <br />
+  <small
+    >Escolha até {{ totalAcrescimo }}
+    <ng-container *ngIf="opcoesSelecionadas.length > 0">
+      ({{
+        opcoesSelecionadas.length === 1
+          ? "1 escolhida"
+          : opcoesSelecionadas.length + " escolhidas"
+      }})
+    </ng-container></small
+  >
+</p>
+
+<div class="pl-1">
+  <label *ngFor="let opcao of opcoesAcrescimo">
+    <input
+      type="checkbox"
+      (change)="marcaOpcao(opcao)"
+      [disabled]="opcaoSelecionada(opcao, totalAcrescimo)"
+    />
+    {{ opcao }} <br />
+  </label>
+</div>
